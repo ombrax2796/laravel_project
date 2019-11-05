@@ -1,1 +1,10 @@
+* Le site 
 
+pages 6 : page principale - page inscription - page login - page epreuve - page admin - pages compte - (page mdp oublie si possible)
+
+composition page principale : les epreuves - bouton compte - 
+                 inscription : rentré données pour les renvoye a la BDD - bouton valider et retour - (si possible CAPTCHA)
+		 login : verifier si correspont a bdd - bouton connexion - bonton inscription 
+	         epreuve : un bouton telechargé epreuve - case flag - bouton retour,home,compte - msg réussitr/echec
+		 compte : nb epreuve réussite - nb point - son e-mail,pseudo - nb de post - creation epreuve - 
+		 admin : modifier point epreuve - validié proposition epreuve - 
