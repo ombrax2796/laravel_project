@@ -8,3 +8,10 @@ composition page principale : les epreuves - bouton compte -
 	         epreuve : un bouton telechargé epreuve - case flag - bouton retour,home,compte - msg réussitr/echec
 		 compte : nb epreuve réussite - nb point - son e-mail,pseudo - nb de post - creation epreuve - 
 		 admin : modifier point epreuve - validié proposition epreuve - 
+
+
+BDD
+crea challenges
+indentification
+seeder bdd 
+crud
