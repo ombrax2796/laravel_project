@@ -14,6 +14,7 @@
 Route::get('/', 'BlogController@index');
 Route::get('/posts/{post}', 'BlogController@post');
 Route::post('/posts/{post}/comment', 'BlogController@comment')->middleware('auth');
+Route::get('chall01', 'Chall01Controller@index');
 
 Auth::routes();
 
