@@ -2,7 +2,7 @@
 
 @section('content')
 
-{!! Form::model($post, ['method' => 'PUT', 'url' => "/admin/posts/{$post}", 'class' => 'form-horizontal', 'role' => 'form']) !!}
+{!! Form::model($post, ['method' => 'PUT', 'url' => "/admin/posts/{$post->id}", 'class' => 'form-horizontal', 'role' => 'form']) !!}
     <div class="container">
         <div class="row">
 
