@@ -8,6 +8,7 @@ use App\Models\Comment;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Spatie\Permission\Models\Role;
 
 class DummyDataSeeder extends Seeder
 {
@@ -18,6 +19,9 @@ class DummyDataSeeder extends Seeder
      */
     public function run()
     {
+        Role::create(['name' => 'admin']);
+        Role::create(['name' => 'modo']);
+        Role::create(['name' => 'user']);
         factory(Category::class, 10)->create();
         factory(Tag::class, 10)->create();
         factory(User::class, 9)->create();

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Role;
 use App\User;
 
 class UsersTableSeeder extends Seeder
@@ -12,14 +13,14 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
-
-        User::create([
-            'name'     => 'Knz Mlns',
-            'email'    => 'test@test.com',
-            'password' => bcrypt('password'),
-            'is_admin' => true,
-            'points'   => '12'
-        ]);
+        factory(App\User::class, 10)->create()->each(function ($user){
+            $user ->assignRole('admin');
+        });
+        factory(App\User::class, 15)->create()->each(function ($user){
+            $user ->assignRole('modo');
+        });
+        factory(App\User::class, 100)->create()->each(function ($user){
+            $user ->assignRole('user');
+        });
     }
 }
